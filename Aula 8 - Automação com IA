@@ -1,0 +1,85 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GustavoMendesPereira/Bot_Discord/blob/main/Aula%208%20-%20Automa%C3%A7%C3%A3o%20com%20IA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Aula 8 - **Automação com IA**\n",
+        "Gustavo Mendes Pereira\n"
+      ],
+      "metadata": {
+        "id": "lij8fqX2PpPe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Script Python para verificar a temperatura de um sistema (simulada)\n",
+        "\n",
+        "# --- ATENÇÃO ---\n",
+        "# Em um cenário real, você precisaria de uma biblioteca ou comando específico do sistema operacional\n",
+        "# para obter a temperatura real do sistema (e.g., psutil, ou comandos como 'sensors' no Linux).\n",
+        "# Para este exemplo, vamos simular a temperatura.\n",
+        "# -----------------\n",
+        "\n",
+        "# Simula a temperatura atual do sistema (você pode alterar este valor para testar diferentes cenários).\n",
+        "temperatura_atual = 35.5 # Exemplo: 35.5 graus Celsius\n",
+        "\n",
+        "# Define o limite de temperatura. Acima deste valor, um alerta será emitido.\n",
+        "limite_temperatura = 30\n",
+        "\n",
+        "# Exibe a temperatura atual do sistema no console para o usuário.\n",
+        "print(\"Temperatura atual do sistema: \" + str(temperatura_atual) + \"°C\")\n",
+        "\n",
+        "# Verifica se a temperatura atual ultrapassa o limite definido.\n",
+        "if temperatura_atual > limite_temperatura:\n",
+        "    # Se a temperatura for maior que o limite, exibe uma mensagem de alerta de superaquecimento.\n",
+        "    print(\"ALERTA: Superaquecimento detectado! Temperatura acima de 30°C.\")\n",
+        "else:\n",
+        "    # Caso contrário (se a temperatura estiver dentro ou abaixo do limite), informa que está normal.\n",
+        "    print(\"Temperatura do sistema está normal.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YRllAc0yPy3n",
+        "outputId": "fd2ae88b-feae-4ade-cdc3-ad4dd4f1b29e"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Temperatura atual do sistema: 35.5°C\n",
+            "ALERTA: Superaquecimento detectado! Temperatura acima de 30°C.\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Conheça o Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
